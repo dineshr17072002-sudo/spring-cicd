@@ -23,5 +23,11 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build with Maven
+      - name: Run tests
+        run: mvn test
+
+      - name: Build application
         run: mvn clean package
+
+      - name: Verify JAR
+        run: ls -la target/
