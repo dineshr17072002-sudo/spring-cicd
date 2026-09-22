@@ -31,3 +31,9 @@ jobs:
 
       - name: Verify JAR
         run: ls -la target/
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: spring-boot-app
+          path: target/*.jar
