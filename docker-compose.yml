@@ -1,0 +1,6 @@
+services:
+  app:
+    image: ghcr.io/dineshr17072002-sudo/springboot-cicd-demo:latest
+    container_name: springboot-compose
+    ports:
+      - "8080:8080"
